@@ -1,0 +1,15 @@
+$pine: #345231;
+$green-grey: #709b6b;
+$accent: #e4a436;
+$black: #1f1f1f;
+$white-shade: #f6f6f6;
+
+@import "normalize";
+
+@import "typography";
+
+@import "general-styles";
+
+nav {
+    background-color: #345231;
+}
