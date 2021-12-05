@@ -10,6 +10,8 @@ $white-shade: #f6f6f6;
 
 @import "general-styles";
 
-nav {
-    background-color: #345231;
-}
+@import "nav-styles";
+
+@import "home-header-styles";
+
+@import "home-about-styles";

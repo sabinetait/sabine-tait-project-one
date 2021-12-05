@@ -14,11 +14,62 @@ p {
 h1,
 h2,
 h3,
-h4,
 a {
     text-transform: uppercase;
 }
 
 a {
     text-decoration: none;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2.1rem;
+}
+
+h3 { 
+    font-size: 1.6rem;
+}
+
+nav a {
+    font-size: 1.2rem;
+}
+
+p,
+a {
+    font-size: 1rem;
+}
+
+h2,
+h3,
+a {
+    color: $black;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Abril Fatface', cursive;
+}
+
+p,
+nav a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+nav a {
+    color: $white-shade;
+}
+
+#nav-selected {
+    color: $accent;
+}
+
+#willow {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2rem;
 }

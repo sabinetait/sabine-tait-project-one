@@ -251,13 +251,64 @@ p {
 h1,
 h2,
 h3,
-h4,
 a {
   text-transform: uppercase;
 }
 
 a {
   text-decoration: none;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2.1rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+nav a {
+  font-size: 1.2rem;
+}
+
+p,
+a {
+  font-size: 1rem;
+}
+
+h2,
+h3,
+a {
+  color: #1f1f1f;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Abril Fatface", cursive;
+}
+
+p,
+nav a {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+nav a {
+  color: #f6f6f6;
+}
+
+#nav-selected {
+  color: #e4a436;
+}
+
+#willow {
+  font-family: "Abril Fatface", cursive;
+  font-size: 2rem;
 }
 
 img {
@@ -277,6 +328,91 @@ ul {
   padding: 0;
 }
 
+header {
+  background-color: #345231;
+}
+
 nav {
   background-color: #345231;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav ul li {
+  padding: 10px 15px;
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 85vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home h1 {
+  font-size: 7rem;
+}
+
+.headshot {
+  width: 40%;
+  margin-top: 50px;
+}
+
+.logo {
+  width: 60%;
+  position: relative;
+}
+
+.logo::before {
+  content: "";
+  background-image: url(../assets/circle-text.png);
+  background-size: 100%;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  z-index: 1;
+  top: -25px;
+  left: -45px;
+  rotate: 15deg;
+}
+
+.about {
+  background-color: #f6f6f6;
+}
+
+.about-willow {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.about-content {
+  margin-bottom: 25px;
+}
+
+.about h2,
+.about p {
+  padding: 10px;
+}
+
+.home-link {
+  background-color: #e4a436;
+  padding: 10px 15px;
+  font-weight: bold;
+  margin: 25px 10px;
 }
