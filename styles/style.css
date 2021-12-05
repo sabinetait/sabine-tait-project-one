@@ -280,6 +280,11 @@ a {
   font-size: 1rem;
 }
 
+p {
+  letter-spacing: 1px;
+  line-height: 35px;
+}
+
 h2,
 h3,
 a {
@@ -290,6 +295,7 @@ h1,
 h2,
 h3 {
   font-family: "Abril Fatface", cursive;
+  letter-spacing: 1px;
 }
 
 p,
@@ -302,12 +308,10 @@ nav a {
   color: #f6f6f6;
 }
 
-#nav-selected {
-  color: #e4a436;
-}
-
 #willow {
   font-family: "Abril Fatface", cursive;
+  text-transform: uppercase;
+  color: #f6f6f6;
   font-size: 2rem;
 }
 
@@ -415,4 +419,135 @@ nav ul li {
   padding: 10px 15px;
   font-weight: bold;
   margin: 25px 10px;
+}
+
+.favourite-things,
+.bucket-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.favourite-img,
+.favourite-content,
+.bucket-list-img,
+.bucket-list-content {
+  width: 50%;
+}
+
+.bucket-list {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.bucket-list-content {
+  text-align: right;
+  padding-right: 50px;
+}
+
+.favourite-content {
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.journey {
+  background-color: #f6f6f6;
+}
+
+div.journey {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.journey-img {
+  width: 30%;
+}
+
+.journey-content {
+  width: 70%;
+}
+
+.full-bleed-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 2000px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer {
+  background-color: #f6f6f6;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 40px 0;
+}
+
+footer a {
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.quick-link {
+  width: calc(100% / 2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.quick-link-content {
+  margin-left: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+footer span {
+  margin-top: 15px;
+}
+
+.circle-icon {
+  position: relative;
+  z-index: 0;
+}
+
+.circle-icon::before {
+  content: "";
+  position: absolute;
+  background-color: #e4a436;
+  height: 50px;
+  width: 50px;
+  border: solid 2px #e4a436;
+  border-radius: 50%;
+  z-index: -1;
+  top: -14px;
+  left: -14px;
+}
+
+.copyright {
+  background-color: #1f1f1f;
+  color: #f6f6f6;
+  text-align: center;
 }

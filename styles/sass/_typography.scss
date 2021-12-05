@@ -43,6 +43,11 @@ a {
     font-size: 1rem;
 }
 
+p {
+    letter-spacing: 1px;
+    line-height: 35px;
+}
+
 h2,
 h3,
 a {
@@ -53,6 +58,7 @@ h1,
 h2,
 h3 {
     font-family: 'Abril Fatface', cursive;
+    letter-spacing: 1px;
 }
 
 p,
@@ -65,11 +71,9 @@ nav a {
     color: $white-shade;
 }
 
-#nav-selected {
-    color: $accent;
-}
-
 #willow {
     font-family: 'Abril Fatface', cursive;
+    text-transform: uppercase;
+    color: $white-shade;
     font-size: 2rem;
 }
