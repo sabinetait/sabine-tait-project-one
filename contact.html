@@ -13,7 +13,7 @@
     <script src="https://kit.fontawesome.com/20567435fb.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <header class="contact">
 
         <nav>
             <ul>
@@ -25,54 +25,63 @@
             </ul>
         </nav>
 
-        <h1>Contact me</h1>
+        <div class="wrapper">
+            <h1 class="contact">Contact me</h1>
+        </div>
 
     </header>
 
-    <main>
+    <main class="contact">
+        <div class="wrapper contact">
+            <aside class="contact">
+                <div class="socials">
 
-        <aside>
-            <div>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
 
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-linkedin-in"></i>
-                <i class="fab fa-instagram"></i>
+                </div>
 
-            </div>
+                <div class="contact-info">
 
-            <div>
+                    <p>info@email.com</p>
+                    
+                    <ul>
+                        <li>123-456-789</li>
+                        <li>123 Queen Street West, Unit 10</li>
+                        <li>Toronto, ON</li>
+                        <li>M5V2D5</li>
+                    </ul>
 
-                <p>info@email.com</p>
+                </div>
+            </aside>
+
+            <form action="submit" class="contact-form" autocomplete="off" name="contact-form" id="contact-form">
                 
-                <ul>
-                    <li>123-456-789</li>
-                    <li>123 Queen Street West, Unit 10</li>
-                    <li>Toronto, ON</li>
-                    <li>M5V2D5</li>
-                </ul>
+                <div class="name">
+                    <input type="text" required="true" placeholder="Name">
+                </div>
 
-            </div>
-        </aside>
+                <div class="email">
+                    <input type="email" required="true" placeholder="Email address">
+                </div>
 
-        <form action="submit" class="contact-form" autocomplete="off" name="contact-form">
+                <div class="text">
+                    <textarea name="user-message" id="user-message" required="true" cols="30" rows="10" placeholder="Message"></textarea>
+                </div>
 
-            <input type="text" placeholder="Name">
+                <button type="submit" form="contact-form" class="contact">Submit</button>
 
-            <input type="email" placeholder="Email address">
-
-            <textarea name="user-message" id="user-message" cols="30" rows="10" placeholder="Message"></textarea>
-
-            <button>Submit</button>
-
-        </form>
-
-        <footer>
-
-            <p class="copyright">Copyright © 2018 HackerYou</p>
-
-        </footer>
-
+            </form>
+        </div>
     </main>
+    <footer>
+
+        <p class="copyright">Copyright © 2018 HackerYou</p>
+
+    </footer>
+
+    
 </body>
 </html>

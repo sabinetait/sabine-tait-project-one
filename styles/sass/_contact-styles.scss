@@ -1,0 +1,90 @@
+// header
+header.contact {
+    height: 45vh;
+    background-image: url(../assets/contact-image-1.jpg);
+    background-position: center;
+    position: relative;
+}
+
+h1.contact {
+    position: absolute;
+    top: 243px;
+
+}
+
+// main
+main.contact {
+    background-color: $white-shade;
+}
+
+// form
+div.contact {
+    display: flex;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+form.contact-form {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 25px;
+    justify-content: space-between;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid white;
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px;
+}
+
+input[type=text],
+input[type=email] {
+    width: 100%;
+}
+
+div.name,
+div.email {
+    padding-bottom: 15px;
+    width: calc((100% / 2) - 15px);
+}
+
+div.text {
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+}
+
+button.contact {
+    font-family: 'Abril Fatface', cursive;
+    background-color: $accent;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    font-weight: bold;
+    border: solid 1px $accent;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    width: 100%;
+
+}
+
+// aside
+aside.contact {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 30%;
+}
+
+div.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+}
