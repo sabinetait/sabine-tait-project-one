@@ -42,10 +42,6 @@ $white-shade: #f6f6f6;
     padding-left: 50px;
 }
 
-.favourite-img {
-
-}
-
 // .favourite-img::after {
 //     content: '';
 //     background-color: $green-grey;
@@ -88,16 +84,82 @@ div.journey {
 .gallery {
     display: flex;
     flex-wrap: wrap;
+    padding: 30px 20px;
+
+}
+
+img.gallery {
+    width: calc((100% / 3) - 20px);
 }
 
 @import "contact-styles";
 
 @import "footer-styles";
 
-
-
-
-
-
 // blog
+// header
+header.blog {
+    height: 45vh;
+    background-image: url(../assets/blog-image-1.jpg);
+    background-position: center;
+    position: relative;
+}
 
+h1.blog {
+    position: absolute;
+    top: 243px;
+}
+
+main.blog {
+    background-color: $white-shade;
+}
+
+.blog-flex {
+    display: flex;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+aside.blog {
+    width: calc(40% - 40px);
+    margin: 0px 20px;
+}
+
+.find {
+    text-transform: none;
+    color: $green-grey;
+    font-weight: bold;
+}
+
+.blog-content {
+    width: calc(60% - 40px);
+    margin: 0px 20px;
+}
+
+.aside-about-willow,
+.aside-recent-posts,
+.blog1,
+.comment1,
+.comment2 {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 25px;
+}
+
+.comment1,
+.comment2 {
+    display: flex;
+}
+
+button.comment {
+    font-family: 'Abril Fatface', cursive;
+    background-color: $accent;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    font-weight: bold;
+    border: solid 1px $accent;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    width: 100%;
+
+}

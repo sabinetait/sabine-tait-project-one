@@ -489,6 +489,11 @@ div.journey {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 30px 20px;
+}
+
+img.gallery {
+  width: calc((100% / 3) - 20px);
 }
 
 header.contact {
@@ -599,7 +604,6 @@ footer {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 25px;
   margin-bottom: 25px;
   padding: 40px 0;
 }
@@ -650,4 +654,73 @@ footer span {
   background-color: #1f1f1f;
   color: #f6f6f6;
   text-align: center;
+}
+
+header.blog {
+  height: 45vh;
+  background-image: url(../assets/blog-image-1.jpg);
+  background-position: center;
+  position: relative;
+}
+
+h1.blog {
+  position: absolute;
+  top: 243px;
+}
+
+main.blog {
+  background-color: #f6f6f6;
+}
+
+.blog-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+aside.blog {
+  width: calc(40% - 40px);
+  margin: 0px 20px;
+}
+
+.find {
+  text-transform: none;
+  color: #709b6b;
+  font-weight: bold;
+}
+
+.blog-content {
+  width: calc(60% - 40px);
+  margin: 0px 20px;
+}
+
+.aside-about-willow,
+.aside-recent-posts,
+.blog1,
+.comment1,
+.comment2 {
+  background-color: white;
+  margin-bottom: 25px;
+  padding: 25px;
+}
+
+.comment1,
+.comment2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+button.comment {
+  font-family: "Abril Fatface", cursive;
+  background-color: #e4a436;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  font-weight: bold;
+  border: solid 1px #e4a436;
+  margin-top: 15px;
+  letter-spacing: 1px;
+  width: 100%;
 }
