@@ -1,3 +1,4 @@
+// contact page
 // header
 header.contact {
     height: 45vh;
@@ -8,8 +9,7 @@ header.contact {
 
 h1.contact {
     position: absolute;
-    top: 243px;
-
+    top: 244px;
 }
 
 // main
@@ -76,15 +76,30 @@ button.contact {
 
 }
 
-// aside
-aside.contact {
-    display: flex;
-    flex-wrap: wrap;
+// contact information
+div.willow-contact {
     background-color: white;
-    width: 30%;
+    padding: 40px 20px 20px 20px;
+    height: 85%;
 }
 
-div.contact-info {
-    display: flex;
-    flex-wrap: wrap;
+i {
+    color: $pine;
+    padding-right: 20px;
+    font-size: 1.3rem;
+}
+
+.socials,
+p.contact-email {
+    padding-bottom: 20px;
+}
+
+p.contact-email {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+ul.address li {
+    font-size: 0.9rem;
+    line-height: 30px;
 }
