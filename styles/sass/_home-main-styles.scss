@@ -1,0 +1,148 @@
+// about section on home page
+.about {
+    background-color: #f6f6f6;
+}
+
+.about-willow {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.about-content {
+    margin-bottom: 25px;
+}
+
+.about h2,
+.about p {
+    padding: 10px;
+}
+
+a.willow {
+    background-color: $accent;
+    padding: 20px 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+// favourite things and bucket list section
+
+.favourite-things,
+.bucket-list {
+    display: flex;
+}
+
+.favourite-img,
+.favourite-content,
+.bucket-list-img,
+.bucket-list-content {
+    width: 50%;
+}
+
+.bucket-list {
+    flex-direction: row-reverse;
+}
+
+.bucket-list-content {
+    text-align: right;
+    padding-right: 50px;
+}
+
+.favourite-content {
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+a.favourite {
+    background-color: $accent;
+    padding: 20px 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+img.favourite {
+    box-shadow: 15px 15px $green-grey;
+}
+
+img.bucket-list {
+    box-shadow: 20px 15px $pine;
+}
+
+div.bucket-list {
+    margin-top: 50px;
+}
+
+div.favourite-things {
+    padding-bottom: 50px;
+}
+
+// img.favourite::before {
+//     content: '';
+//     background-color: $green-grey;
+//     background-size: 100%;
+//     width: 775px;
+//     height: 500px;
+//     display: inline;
+//     position: absolute;
+//     z-index: -1;
+// }
+
+
+// journey section on home page
+.journey {
+    background-color: $white-shade;
+}
+
+div.journey {
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    justify-content: space-between;
+}
+
+h2.journey,
+p.journey {
+    margin-bottom: 20px;
+}
+
+.journey-img {
+    width: calc(30% - 40px);
+    box-shadow: 20px 20px $green-grey;
+    margin-right: 20px;
+}
+
+.journey-content {
+    width: calc(70% - 60px);
+    margin-left: 20px;
+}
+
+a.journey {
+    background-color: $accent;
+    padding: 20px 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+// full bleed image on home page
+
+.full-bleed-img {
+    display: flex;
+    max-width: 2000px;
+    justify-content: center;
+}
+
+// gallery section on home page
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 20px;
+    justify-content: space-between;
+
+}
+
+img.gallery {
+    width: calc((100% / 3) - 20px);
+}

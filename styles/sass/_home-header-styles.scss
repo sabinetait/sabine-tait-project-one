@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     height: 85vh;
     align-items: center;
+    // position: relative;
 }
 
 .home h1 {
@@ -11,6 +12,8 @@
 
 .headshot {
     width: 40%;
+    box-shadow: 20px 20px white;
+    // position: absolute;
     margin-top: 50px;
 }
 
