@@ -673,68 +673,6 @@ ul.address li {
   line-height: 30px;
 }
 
-footer {
-  background-color: #f6f6f6;
-}
-
-.footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-bottom: 25px;
-  padding: 40px 0;
-}
-
-footer a {
-  font-size: 1.6rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-.quick-link {
-  width: calc(100% / 2);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.quick-link-content {
-  margin-left: 25px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-footer span {
-  margin-top: 15px;
-}
-
-.circle-icon {
-  position: relative;
-  z-index: 0;
-}
-
-.circle-icon::before {
-  content: "";
-  position: absolute;
-  background-color: #e4a436;
-  height: 50px;
-  width: 50px;
-  border: solid 2px #e4a436;
-  border-radius: 50%;
-  z-index: -1;
-  display: block;
-  top: -14px;
-  left: -14px;
-}
-
-.copyright {
-  background-color: #1f1f1f;
-  color: #f6f6f6;
-  text-align: center;
-}
-
 header.blog {
   height: 45vh;
   background-image: url(../assets/blog-image-1.jpg);
@@ -881,4 +819,66 @@ button.comment {
   margin-top: 15px;
   letter-spacing: 1px;
   width: 100%;
+}
+
+footer {
+  background-color: #f6f6f6;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 25px;
+  padding: 40px 0;
+}
+
+footer a {
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.quick-link {
+  width: calc(100% / 2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.quick-link-content {
+  margin-left: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+footer span {
+  margin-top: 15px;
+}
+
+.circle-icon {
+  position: relative;
+  z-index: 0;
+}
+
+.circle-icon::before {
+  content: "";
+  position: absolute;
+  background-color: #e4a436;
+  height: 50px;
+  width: 50px;
+  border: solid 2px #e4a436;
+  border-radius: 50%;
+  z-index: -1;
+  display: block;
+  top: -14px;
+  left: -14px;
+}
+
+.copyright {
+  background-color: #1f1f1f;
+  color: #f6f6f6;
+  text-align: center;
 }

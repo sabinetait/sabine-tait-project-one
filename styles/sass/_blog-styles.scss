@@ -1,0 +1,147 @@
+// header
+header.blog {
+    height: 45vh;
+    background-image: url(../assets/blog-image-1.jpg);
+    background-position: center;
+    position: relative;
+}
+
+h1.blog {
+    position: absolute;
+    top: 244px;
+}
+
+// main content
+main.blog {
+    background-color: $white-shade;
+}
+
+.blog-flex {
+    display: flex;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+
+.blog-content {
+    width: 60%;
+    margin-left: 20px;
+}
+
+section.blog1 h2 {
+    font-size: 1.4rem;
+}
+
+// aside
+aside.blog {
+    width: calc(40% - 40px);
+    margin-right: 20px
+}
+
+img.blog-headshot {
+    margin: 0 auto;
+    width: 100%;
+}
+
+div.aside-about-willow p {
+    font-size: 0.9rem;
+}
+
+div.aside-about-willow h3 {
+    margin: 15px 0px;
+}
+
+.find {
+    text-transform: none;
+    color: $green-grey;
+    font-weight: bold;
+}
+
+ul.recent-posts {
+    padding: 15px 0px 15px 30px;
+}
+
+ul.recent-posts li {
+    list-style-type: disc;
+    font-size: 0.5rem;
+    line-height: 30px;
+}
+
+ul.recent-posts li a {
+    text-transform: none;
+    font-size: 0.9rem;
+    padding-left: 10px;
+}
+
+.aside-about-willow,
+.aside-recent-posts,
+.blog1,
+.comment1,
+.comment2 {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 25px;
+}
+
+// blog posts and comments
+
+.blog1,
+.comment2 {
+    position: relative;
+}
+
+h2,
+.date {
+    margin-bottom: 10px;
+}
+
+.blog1::after,
+.comment2::after {
+    content: '';
+    position: absolute;
+    background-color: $green-grey;
+    background-size: 125%;
+    height: 10px;
+    width: 100%;
+    display: inline-block;
+    right: 1px;
+    bottom: 1px;
+     
+}
+
+.comment1,
+.comment2 {
+    display: flex;
+}
+
+div.comment1 img,
+div.comment2 img {
+    height: 25%;
+    padding-right: 25px;
+}
+
+// form
+form.comment {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div.userName,
+div.userEmail {
+    width: calc((100% / 2) - 7px);
+    padding-bottom: 15px;
+}
+
+button.comment {
+    font-family: 'Abril Fatface', cursive;
+    background-color: $accent;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    font-weight: bold;
+    border: solid 1px $accent;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    width: 100%;
+
+}
