@@ -35,7 +35,7 @@
         <div class="wrapper blog-flex">
             <aside class="blog">
                 <div class="aside-about-willow">
-                    <img src="./assets/blog-image-2.jpg" alt="Willow wearing a yellow jacket looking straight into the camera, face half hidden by a palm leaf">
+                    <img src="./assets/blog-image-2.jpg" alt="Headshot of Willow looking straight into the camera, face half hidden by a palm leaf" class="blog-headshot">
 
                     <h3>About Willow</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos laboriosam dolor consectetur. <a href="#" class="find">Find out more.</a></p>
@@ -43,11 +43,11 @@
             
                 <div class="aside-recent-posts">
                     <h3>Recent posts</h3>
-                    <ul>
-                        <li>Lorem ipsum dolor sit.</li>
-                        <li>Rem officia autem culpa.</li>
-                        <li>Ullam illo delectus dolores?</li>
-                        <li>Officia tenetur accusamus dicta.</li>
+                    <ul class="recent-posts">
+                        <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                        <li><a href="#">Rem officia autem culpa</a></li>
+                        <li><a href="#">Ullam illo delectus dolores</a></li>
+                        <li><a href="#">Officia tenetur accusamus dicta</a></li>
                     </ul>
                 </div>
 
@@ -97,11 +97,14 @@
                     </div>
 
                     <form action="submit" class="comment" autocomplete="off" name="comment">
-                    
+                        <div class="userName">
                         <input type="text" placeholder="Name">
-                    
+                        </div>
+
+                        <div class="userEmail">
                         <input type="email" placeholder="Email address">
-                    
+                        </div>
+
                         <textarea name="user-comment" id="user-comment" cols="30" rows="10" placeholder="Comment"></textarea>
                     
                         <button type="submit" form="comment-form" class="comment">Post comment</button>

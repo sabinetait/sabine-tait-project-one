@@ -32,9 +32,10 @@ header.blog {
 
 h1.blog {
     position: absolute;
-    top: 243px;
+    top: 244px;
 }
 
+// main content on blog page
 main.blog {
     background-color: $white-shade;
 }
@@ -45,8 +46,19 @@ main.blog {
     padding-bottom: 80px;
 }
 
+
+.blog-content {
+    width: 60%;
+    margin: 0px 20px;
+}
+
+section.blog1 h2 {
+    font-size: 1.4rem;
+}
+
+// aside on blog page
 aside.blog {
-    width: calc(40% - 40px);
+    width: 40%;
     margin: 0px 20px;
 }
 
@@ -56,9 +68,20 @@ aside.blog {
     font-weight: bold;
 }
 
-.blog-content {
-    width: calc(60% - 40px);
-    margin: 0px 20px;
+ul.recent-posts {
+    padding: 15px 0px 15px 30px;
+}
+
+ul.recent-posts li {
+    list-style-type: disc;
+    font-size: 0.5rem;
+    line-height: 30px;
+}
+
+ul.recent-posts li a {
+    text-transform: none;
+    font-size: 0.9rem;
+    padding-left: 10px;
 }
 
 .aside-about-willow,
@@ -71,9 +94,29 @@ aside.blog {
     padding: 25px;
 }
 
+// comment section on blog page
 .comment1,
 .comment2 {
     display: flex;
+}
+
+div.comment1 img,
+div.comment2 img {
+    height: 25%;
+    padding-right: 25px;
+}
+
+// form on blog page
+form.comment {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div.userName,
+div.userEmail {
+    width: calc((100% / 2) - 15px);
+    padding-bottom: 15px;
 }
 
 button.comment {
