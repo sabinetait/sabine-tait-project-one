@@ -464,22 +464,40 @@ a.favourite {
   display: inline-block;
 }
 
-img.favourite {
-  -webkit-box-shadow: 15px 15px #709b6b;
-          box-shadow: 15px 15px #709b6b;
-}
-
-img.bucket-list {
-  -webkit-box-shadow: 20px 15px #345231;
-          box-shadow: 20px 15px #345231;
+div.favourite-things {
+  padding-bottom: 50px;
+  position: relative;
 }
 
 div.bucket-list {
   margin-top: 50px;
+  position: relative;
 }
 
-div.favourite-things {
-  padding-bottom: 50px;
+div.favourite-things::before {
+  content: "";
+  background-color: #709b6b;
+  background-size: 100%;
+  width: 900px;
+  height: 340px;
+  display: inline-block;
+  position: absolute;
+  z-index: -1;
+  top: 25px;
+  right: 515px;
+}
+
+div.bucket-list::before {
+  content: "";
+  background-color: #345231;
+  background-size: 100%;
+  width: 700px;
+  height: 340px;
+  display: inline-block;
+  position: absolute;
+  z-index: -1;
+  top: 25px;
+  right: -400px;
 }
 
 .journey {
@@ -634,13 +652,13 @@ div.willow-contact {
   height: 85%;
 }
 
-i {
+i.aside-socials {
   color: #345231;
   padding-right: 20px;
   font-size: 1.3rem;
 }
 
-.socials,
+.aside-socials,
 p.contact-email {
   padding-bottom: 20px;
 }
@@ -813,7 +831,7 @@ form.comment {
 
 div.userName,
 div.userEmail {
-  width: calc((100% / 2) - 15px);
+  width: calc((100% / 2) - 7px);
   padding-bottom: 15px;
 }
 
