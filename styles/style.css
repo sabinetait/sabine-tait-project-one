@@ -761,7 +761,7 @@ main.blog {
 
 .blog-content {
   width: 60%;
-  margin: 0px 20px;
+  margin-left: 20px;
 }
 
 section.blog1 h2 {
@@ -769,8 +769,21 @@ section.blog1 h2 {
 }
 
 aside.blog {
-  width: 40%;
-  margin: 0px 20px;
+  width: calc(40% - 40px);
+  margin-right: 20px;
+}
+
+img.blog-headshot {
+  margin: 0 auto;
+  width: 100%;
+}
+
+div.aside-about-willow p {
+  font-size: 0.9rem;
+}
+
+div.aside-about-willow h3 {
+  margin: 15px 0px;
 }
 
 .find {
@@ -803,6 +816,29 @@ ul.recent-posts li a {
   background-color: white;
   margin-bottom: 25px;
   padding: 25px;
+}
+
+.blog1,
+.comment2 {
+  position: relative;
+}
+
+h2,
+.date {
+  margin-bottom: 10px;
+}
+
+.blog1::after,
+.comment2::after {
+  content: "";
+  position: absolute;
+  background-color: #709b6b;
+  background-size: 125%;
+  height: 10px;
+  width: 100%;
+  display: inline-block;
+  right: 1px;
+  bottom: 1px;
 }
 
 .comment1,
