@@ -94,6 +94,9 @@ div.favourite-things::before {
     top: 25px;
     right: 515px;
 }
+.bucket-list-img {
+    z-index: 1;
+}
 
 div.bucket-list::before { 
     content: '';
@@ -103,7 +106,6 @@ div.bucket-list::before {
     height: 340px;
     display: inline-block;
     position: absolute;
-    z-index: -1;
     top: 25px;
     left: 570px;
 }
