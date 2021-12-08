@@ -31,7 +31,21 @@ $white-shade: #f6f6f6;
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 725px) {
+    // nav
+    nav {
+        justify-content: left;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    i.menu {
+        visibility: visible;
+        font-size: 1rem;
+    }
+    
     // contact page
     div.contact {
         flex-direction: column;

@@ -2,13 +2,26 @@ nav {
     background-color: #345231;
     display: flex;
     justify-content: center;
+    align-content: center;
+}
+
+i.menu {
+    color: $white-shade;
+    font-size: 0;
+    padding: 20px 10px;
+    visibility: collapse;
+}
+
+i.menu:hover,
+i.menu:focus {
+    color: $accent;
 }
 
 nav ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px
+    padding: 10px;
 }
  
 nav ul li,

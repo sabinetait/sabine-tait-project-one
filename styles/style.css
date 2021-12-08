@@ -345,6 +345,20 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+i.menu {
+  color: #f6f6f6;
+  font-size: 0;
+  padding: 20px 10px;
+  visibility: collapse;
+}
+
+i.menu:hover,
+i.menu:focus {
+  color: #e4a436;
 }
 
 nav ul {
@@ -904,7 +918,22 @@ div.email {
     width: 100%;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 725px) {
+  nav {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  i.menu {
+    visibility: visible;
+    font-size: 1rem;
+  }
+
   div.contact {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
