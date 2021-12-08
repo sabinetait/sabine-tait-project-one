@@ -357,6 +357,11 @@ nav ul li {
   padding: 10px 15px;
 }
 
+nav ul li a:hover,
+nav ul li a:focus {
+  color: #e4a436;
+}
+
 .home {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -398,6 +403,29 @@ nav ul li {
   rotate: 15deg;
 }
 
+a.willow,
+a.favourite,
+a.journey {
+  background-color: #e4a436;
+  padding: 20px 25px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: inline-block;
+  border: 2px solid #e4a436;
+}
+
+a.willow:hover,
+a.willow:focus,
+a.journey:hover,
+a.journey:focus {
+  background-color: #f6f6f6;
+}
+
+a.favourite:hover,
+a.favourite:focus {
+  background-color: white;
+}
+
 .about {
   background-color: #f6f6f6;
 }
@@ -415,14 +443,6 @@ nav ul li {
 .about h2,
 .about p {
   padding: 10px;
-}
-
-a.willow {
-  background-color: #e4a436;
-  padding: 20px 25px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  display: inline-block;
 }
 
 .favourite-things,
@@ -456,17 +476,10 @@ a.willow {
   padding-left: 50px;
 }
 
-a.favourite {
-  background-color: #e4a436;
-  padding: 20px 25px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  display: inline-block;
-}
-
 div.favourite-things {
-  padding-bottom: 50px;
+  margin-bottom: 100px;
   position: relative;
+  z-index: 10;
 }
 
 div.bucket-list {
@@ -491,13 +504,13 @@ div.bucket-list::before {
   content: "";
   background-color: #345231;
   background-size: 100%;
-  width: 700px;
+  width: 690px;
   height: 340px;
   display: inline-block;
   position: absolute;
   z-index: -1;
   top: 25px;
-  right: -400px;
+  left: 570px;
 }
 
 .journey {
@@ -521,30 +534,22 @@ p.journey {
 }
 
 .journey-img {
-  width: calc(30% - 40px);
+  width: calc(30% - 20px);
+  margin-right: 10px;
   -webkit-box-shadow: 20px 20px #709b6b;
           box-shadow: 20px 20px #709b6b;
-  margin-right: 20px;
 }
 
 .journey-content {
   width: calc(70% - 60px);
-  margin-left: 20px;
-}
-
-a.journey {
-  background-color: #e4a436;
-  padding: 20px 25px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  display: inline-block;
+  margin-left: 10px;
 }
 
 .full-bleed-img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 2000px;
+  max-width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

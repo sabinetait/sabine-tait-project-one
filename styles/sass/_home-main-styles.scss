@@ -1,4 +1,29 @@
-// about section on home page
+// home page main styling
+// link styling
+a.willow,
+a.favourite,
+a.journey {
+    background-color: $accent;
+    padding: 20px 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: inline-block;
+    border: 2px solid $accent;
+}
+
+a.willow:hover,
+a.willow:focus,
+a.journey:hover,
+a.journey:focus {
+    background-color: $white-shade;
+}
+
+a.favourite:hover,
+a.favourite:focus {
+    background-color: white;
+}
+
+// about section 
 .about {
     background-color: #f6f6f6;
 }
@@ -16,14 +41,6 @@
 .about h2,
 .about p {
     padding: 10px;
-}
-
-a.willow {
-    background-color: $accent;
-    padding: 20px 25px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    display: inline-block;
 }
 
 // favourite things and bucket list section
@@ -54,17 +71,10 @@ a.willow {
     padding-left: 50px;
 }
 
-a.favourite {
-    background-color: $accent;
-    padding: 20px 25px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    display: inline-block;
-}
-
 div.favourite-things {
-    padding-bottom: 50px;
+    margin-bottom: 100px;
     position: relative;
+    z-index: 10;
 }
 
 div.bucket-list {
@@ -85,19 +95,17 @@ div.favourite-things::before {
     right: 515px;
 }
 
-div.bucket-list::before {
+div.bucket-list::before { 
     content: '';
     background-color: $pine;
     background-size: 100%;
-    width: 700px;
+    width: 690px;
     height: 340px;
     display: inline-block;
     position: absolute;
     z-index: -1;
     top: 25px;
-    right: -400px;
-
-
+    left: 570px;
 }
 
 // journey section on home page
@@ -118,29 +126,21 @@ p.journey {
 }
 
 .journey-img {
-    width: calc(30% - 40px);
+    width: calc(30% - 20px);
+    margin-right: 10px;
     box-shadow: 20px 20px $green-grey;
-    margin-right: 20px;
 }
 
 .journey-content {
     width: calc(70% - 60px);
-    margin-left: 20px;
-}
-
-a.journey {
-    background-color: $accent;
-    padding: 20px 25px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    display: inline-block;
+    margin-left: 10px;
 }
 
 // full bleed image on home page
 
 .full-bleed-img {
     display: flex;
-    max-width: 2000px;
+    max-width: 100%;
     justify-content: center;
 }
 
