@@ -32,6 +32,20 @@ $white-shade: #f6f6f6;
 }
 
 @media (max-width: 725px) {
+    // header
+    h1.contact,
+    h1.blog {
+        font-size: 3rem;
+    }
+    
+    h1.blog {
+        top: 263px;
+    }
+
+    h1.contact {
+        top: 262px;
+    }
+    
     // nav
     nav {
         justify-content: left;
@@ -66,5 +80,13 @@ $white-shade: #f6f6f6;
 
     div.willow-contact {
         margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 460px) {
+    // header
+    h1.blog {
+    top: 193px;
+    
     }
 }

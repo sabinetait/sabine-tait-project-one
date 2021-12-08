@@ -602,7 +602,7 @@ header.contact {
 
 h1.contact {
   position: absolute;
-  top: 244px;
+  top: 243px;
 }
 
 main.contact {
@@ -919,6 +919,19 @@ div.email {
   }
 }
 @media (max-width: 725px) {
+  h1.contact,
+h1.blog {
+    font-size: 3rem;
+  }
+
+  h1.blog {
+    top: 263px;
+  }
+
+  h1.contact {
+    top: 262px;
+  }
+
   nav {
     -webkit-box-pack: left;
         -ms-flex-pack: left;
@@ -956,5 +969,10 @@ div.email {
 
   div.willow-contact {
     margin-bottom: 25px;
+  }
+}
+@media (max-width: 460px) {
+  h1.blog {
+    top: 193px;
   }
 }
