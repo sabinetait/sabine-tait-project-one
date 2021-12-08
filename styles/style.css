@@ -339,6 +339,12 @@ header {
 
 nav {
   background-color: #345231;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 nav ul {
@@ -351,9 +357,11 @@ nav ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 10px;
 }
 
-nav ul li {
+nav ul li,
+#willow {
   padding: 10px 15px;
 }
 
