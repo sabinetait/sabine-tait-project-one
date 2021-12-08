@@ -356,6 +356,10 @@ i.menu {
   visibility: collapse;
 }
 
+.selected {
+  color: #e4a436;
+}
+
 i.menu:hover,
 i.menu:focus {
   color: #e4a436;

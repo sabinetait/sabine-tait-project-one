@@ -12,6 +12,10 @@ i.menu {
     visibility: collapse;
 }
 
+.selected {
+    color: $accent;
+}
+
 i.menu:hover,
 i.menu:focus {
     color: $accent;
