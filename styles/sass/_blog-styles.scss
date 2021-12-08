@@ -90,8 +90,10 @@ ul.recent-posts li a {
     position: relative;
 }
 
-h2,
-p {
+section.blog1 h2,
+section.blog1 p,
+div.comment1 p,
+div.comment2 p {
     margin-bottom: 10px;
 }
 
