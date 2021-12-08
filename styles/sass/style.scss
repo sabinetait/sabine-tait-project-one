@@ -23,3 +23,34 @@ $white-shade: #f6f6f6;
 
 @import "footer-styles";
 
+@media (max-width: 900px) {
+    // contact page
+    div.name,
+    div.email {
+    width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    // contact page
+    div.contact {
+        flex-direction: column;
+    }
+
+    div.contact-willow {
+        margin-bottom: 20px;
+    }
+
+    form.contact-form {
+        padding-left: 0px;
+        width: 100%;
+    }
+
+    div.aside-socials a {
+        font-size: 1rem;
+    }
+
+    div.willow-contact {
+        margin-bottom: 25px;
+    }
+}
