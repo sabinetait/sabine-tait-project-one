@@ -457,6 +457,10 @@ a.favourite:focus {
 .about {
   background-color: #f6f6f6;
 }
+.about h2,
+.about p {
+  padding: 10px;
+}
 
 .about-willow {
   padding-top: 100px;
@@ -468,16 +472,21 @@ a.favourite:focus {
   margin-bottom: 25px;
 }
 
-.about h2,
-.about p {
-  padding: 10px;
-}
-
 .favourite-things,
 .bucket-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.favourite-things h3,
+.favourite-things p,
+.bucket-list h3,
+.bucket-list p {
+  padding-bottom: 20px;
+}
+.favourite-things h3,
+.bucket-list h3 {
+  padding-top: 25px;
 }
 
 .favourite-img,
@@ -500,14 +509,17 @@ a.favourite:focus {
 }
 
 .favourite-content {
-  padding-top: 50px;
   padding-left: 50px;
 }
 
-div.favourite-things {
-  margin-bottom: 100px;
+.favourite-things {
   position: relative;
-  z-index: 10;
+}
+
+.favourite-img {
+  position: relative;
+  bottom: 50px;
+  z-index: 1;
 }
 
 div.bucket-list {
@@ -523,13 +535,14 @@ div.favourite-things::before {
   height: 340px;
   display: inline-block;
   position: absolute;
-  z-index: -1;
-  top: 25px;
-  right: 515px;
+  bottom: 25px;
+  left: -335px;
 }
 
 .bucket-list-img {
   z-index: 1;
+  position: relative;
+  top: 25px;
 }
 
 div.bucket-list::before {
@@ -540,7 +553,7 @@ div.bucket-list::before {
   height: 340px;
   display: inline-block;
   position: absolute;
-  top: 25px;
+  top: 50px;
   left: 570px;
 }
 
@@ -558,9 +571,8 @@ div.journey {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
-h2.journey,
-p.journey {
+div.journey h2,
+div.journey p {
   margin-bottom: 20px;
 }
 
@@ -597,8 +609,7 @@ p.journey {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
-img.gallery {
+.gallery img {
   width: calc((100% / 3) - 20px);
 }
 
