@@ -5,6 +5,8 @@ $accent: #e4a436;
 $black: #1f1f1f;
 $white-shade: #f6f6f6;
 
+// .scss imports
+
 @import "normalize";
 
 @import "typography";
@@ -23,12 +25,45 @@ $white-shade: #f6f6f6;
 
 @import "footer-styles";
 
+// changes in viewport 
+
 @media (max-width: 900px) {
     // contact page
     div.name,
     div.email {
     width: 100%;
     }
+}
+
+@media (max-width: 860px) {
+    // blog page
+    div.blog-flex {
+        flex-direction: column;
+    }
+
+    aside.blog,
+    div.blog-content {
+        width: 100%;
+    }
+
+    aside.blog {
+        margin-right: 0px;
+    }
+
+    div.blog-content {
+        margin-left: 0px;
+    }
+
+    .aside-about-willow {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .aside-text {
+        margin-left: 25px;
+    }
+
 }
 
 @media (max-width: 725px) {
@@ -49,10 +84,11 @@ $white-shade: #f6f6f6;
     // nav
     nav {
         justify-content: left;
-    }
 
-    nav ul {
+        ul {
         display: none;
+
+        }
     }
 
     i.menu {
@@ -81,7 +117,21 @@ $white-shade: #f6f6f6;
     div.willow-contact {
         margin-bottom: 25px;
     }
+
 }
+
+@media (max-width: 615px) {
+    // blog page
+    .aside-about-willow {
+        flex-direction: column;
+    }
+
+    div.userName,
+    div.userEmail {
+        width: 100%;
+    }
+}
+
 
 @media (max-width: 460px) {
     // header
