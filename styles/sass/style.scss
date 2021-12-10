@@ -164,6 +164,24 @@ $white-shade: #f6f6f6;
 }
 
 @media (max-width: 615px) {
+    // home header 
+    .home {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .logo {
+        margin-left: 15%;
+        
+        h1 {
+            font-size: 4rem;
+        }
+    }
+    
+    .headshot {
+        width: 65%;
+    }
+
     // blog page
     .aside-about-willow {
         flex-direction: column;
@@ -177,6 +195,18 @@ $white-shade: #f6f6f6;
 
 
 @media (max-width: 460px) {
+    // home header 
+    .logo h1 {
+        font-size: 3.2rem;
+    }
+
+    .logo::before {
+        height: 80px;
+        width: 80px;
+        top: -15px;
+        left: -30px;
+    }
+
     // header
     h1.blog {
     top: 193px;
