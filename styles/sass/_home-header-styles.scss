@@ -3,18 +3,19 @@
     flex-wrap: wrap;
     height: 85vh;
     align-items: center;
-    // position: relative;
-}
 
-.home h1 {
-    font-size: 7rem;
+    h1 {
+        font-size: 7rem;
+    }
 }
 
 .headshot {
     width: 40%;
-    box-shadow: 20px 20px white;
-    // position: absolute;
-    margin-top: 50px;
+    margin-top: 5vh;
+
+    img {
+        box-shadow: 20px 20px white;
+    }
 }
 
 .logo {

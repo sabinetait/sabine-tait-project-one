@@ -399,16 +399,17 @@ nav ul li a:focus {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .home h1 {
   font-size: 7rem;
 }
 
 .headshot {
   width: 40%;
+  margin-top: 5vh;
+}
+.headshot img {
   -webkit-box-shadow: 20px 20px white;
           box-shadow: 20px 20px white;
-  margin-top: 50px;
 }
 
 .logo {
@@ -932,6 +933,19 @@ footer span {
   text-align: center;
 }
 
+@media (max-width: 1200px) {
+  div.headshot {
+    margin-top: 0vh;
+  }
+
+  .logo {
+    width: calc(60% - 5%);
+    margin-left: 5%;
+  }
+  .logo h1 {
+    font-size: 6rem;
+  }
+}
 @media (max-width: 900px) {
   div.name,
 div.email {
@@ -976,6 +990,35 @@ div.blog-content {
   }
 }
 @media (max-width: 725px) {
+  .home {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 10%;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+
+  .headshot img {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
+  .logo {
+    width: 100%;
+    margin-left: 25%;
+    margin-bottom: 5%;
+  }
+  .logo h1 {
+    font-size: 5rem;
+  }
+
+  .logo::before {
+    height: 100px;
+    width: 100px;
+  }
+
   h1.contact,
 h1.blog {
     font-size: 3rem;

@@ -26,6 +26,22 @@ $white-shade: #f6f6f6;
 @import "footer-styles";
 
 // changes in viewport 
+@media (max-width: 1200px) {
+    // home header
+    div.headshot {
+        margin-top: 0vh ;
+    }
+
+    .logo {
+    width: calc(60% - 5%);
+    margin-left: 5%;
+
+        h1 {
+        font-size: 6rem;
+
+        }   
+    }
+}
 
 @media (max-width: 900px) {
     // contact page
@@ -67,6 +83,33 @@ $white-shade: #f6f6f6;
 }
 
 @media (max-width: 725px) {
+    // home header
+    .home {
+        flex-direction: column;
+        padding-top: 10%;
+        align-content: center;
+    }
+
+    .headshot img {
+        box-shadow: none;
+    }
+
+    .logo {
+        width: 100%;
+        margin-left: 25%;
+        margin-bottom: 5%;
+
+        h1 {
+        font-size: 5rem;
+
+        }   
+    }
+
+    .logo::before {
+        height: 100px;
+        width:100px;
+    }
+
     // header
     h1.contact,
     h1.blog {
