@@ -41,10 +41,32 @@ $white-shade: #f6f6f6;
 
         }   
     }
+    // home page
+    // jouney section
+    .journey {
+        align-items: center;
+    }
+
+    div.journey {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .journey-img {
+        width: 50%;
+        margin-right: 0;
+    }
+
+    .journey-content {
+        width: 75%;
+        margin-left: 0px;
+        text-align: center;
+        margin-top: 50px;
+    }
 }
 
 @media (max-width: 900px) {
-    // contact page
+// contact page
     div.name,
     div.email {
     width: 100%;
