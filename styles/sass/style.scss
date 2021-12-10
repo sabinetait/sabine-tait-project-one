@@ -131,14 +131,20 @@ $white-shade: #f6f6f6;
     }
 
     // footer
-    div.footer {
+    .footer {
         flex-wrap: nowrap;
         flex-direction: column;
-    }
 
-    div.quick-link {
+        .quick-link {
         width: 100%;
         padding: 15px;
+        
+        }
+    }
+
+
+    .quick-link-content {
+        width: 100%;
     }
 
     // blog page

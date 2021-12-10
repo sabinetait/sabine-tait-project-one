@@ -931,7 +931,8 @@ footer span {
   position: relative;
   z-index: 0;
 }
-.circle-icon .circle-icon::before {
+
+.circle-icon::before {
   content: "";
   position: absolute;
   background-color: #e4a436;
@@ -1066,7 +1067,7 @@ div.email {
     width: 100%;
   }
 
-  div.footer {
+  .footer {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     -webkit-box-orient: vertical;
@@ -1074,10 +1075,13 @@ div.email {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-
-  div.quick-link {
+  .footer .quick-link {
     width: 100%;
     padding: 15px;
+  }
+
+  .quick-link-content {
+    width: 100%;
   }
 
   div.blog-flex {
