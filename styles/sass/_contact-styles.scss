@@ -69,11 +69,15 @@ button.contact {
     text-transform: uppercase;
     padding: 10px 15px;
     font-weight: bold;
-    border: solid 1px $accent;
+    border: solid 2px $accent;
     margin-top: 15px;
     letter-spacing: 1px;
     width: 100%;
+}
 
+button.contact:hover,
+button.contact:focus {
+    background-color: $white-shade;
 }
 
 // contact information

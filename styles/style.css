@@ -337,10 +337,6 @@ header {
   background-color: #345231;
 }
 
-.sr-only {
-  display: none;
-}
-
 nav {
   background-color: #345231;
   display: -webkit-box;
@@ -692,10 +688,15 @@ button.contact {
   text-transform: uppercase;
   padding: 10px 15px;
   font-weight: bold;
-  border: solid 1px #e4a436;
+  border: solid 2px #e4a436;
   margin-top: 15px;
   letter-spacing: 1px;
   width: 100%;
+}
+
+button.contact:hover,
+button.contact:focus {
+  background-color: #f6f6f6;
 }
 
 div.willow-contact {
@@ -768,18 +769,22 @@ img.blog-headshot {
   width: 100%;
 }
 
-div.aside-about-willow p {
-  font-size: 0.9rem;
-}
-
 div.aside-about-willow h3 {
   margin: 15px 0px;
+}
+div.aside-about-willow p {
+  font-size: 0.9rem;
 }
 
 .find {
   text-transform: none;
   color: #709b6b;
   font-weight: bold;
+}
+
+.find:hover,
+.find:focus {
+  text-decoration: underline;
 }
 
 ul.recent-posts {
@@ -791,11 +796,14 @@ ul.recent-posts li {
   font-size: 0.5rem;
   line-height: 30px;
 }
-
 ul.recent-posts li a {
   text-transform: none;
   font-size: 0.9rem;
   padding-left: 10px;
+}
+ul.recent-posts li a:hover,
+ul.recent-posts li a:focus {
+  text-decoration: underline;
 }
 
 .aside-about-willow,
@@ -869,10 +877,15 @@ button.comment {
   text-transform: uppercase;
   padding: 10px 15px;
   font-weight: bold;
-  border: solid 1px #e4a436;
+  border: solid 2px #e4a436;
   margin-top: 15px;
   letter-spacing: 1px;
   width: 100%;
+}
+
+button.comment:hover,
+button.comment:focus {
+  background-color: #f6f6f6;
 }
 
 footer {
@@ -888,14 +901,7 @@ footer {
   margin-bottom: 25px;
   padding: 40px 0;
 }
-
-footer a {
-  font-size: 1.6rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-.quick-link {
+.footer .quick-link {
   width: calc(100% / 2);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -907,6 +913,15 @@ footer a {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.quick-link-content a {
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.quick-link-content a:hover,
+.quick-link-content a:focus {
+  color: #345231;
+}
 
 footer span {
   margin-top: 15px;
@@ -916,8 +931,7 @@ footer span {
   position: relative;
   z-index: 0;
 }
-
-.circle-icon::before {
+.circle-icon .circle-icon::before {
   content: "";
   position: absolute;
   background-color: #e4a436;

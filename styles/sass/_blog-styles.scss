@@ -43,18 +43,24 @@ img.blog-headshot {
     width: 100%;
 }
 
-div.aside-about-willow p {
-    font-size: 0.9rem;
-}
-
-div.aside-about-willow h3 {
+div.aside-about-willow {
+    h3 {
     margin: 15px 0px;
+    }
+    p {
+        font-size: 0.9rem;
+    }
 }
 
 .find {
     text-transform: none;
     color: $green-grey;
     font-weight: bold;
+}
+
+.find:hover,
+.find:focus {
+    text-decoration: underline;
 }
 
 ul.recent-posts {
@@ -65,13 +71,19 @@ ul.recent-posts li {
     list-style-type: disc;
     font-size: 0.5rem;
     line-height: 30px;
+
+    a { 
+        text-transform: none;
+        font-size: 0.9rem;
+        padding-left: 10px;
+    }
+
+    a:hover,
+    a:focus {
+        text-decoration: underline;
+    }
 }
 
-ul.recent-posts li a {
-    text-transform: none;
-    font-size: 0.9rem;
-    padding-left: 10px;
-}
 
 .aside-about-willow,
 .aside-recent-posts,
@@ -141,9 +153,13 @@ button.comment {
     text-transform: uppercase;
     padding: 10px 15px;
     font-weight: bold;
-    border: solid 1px $accent;
+    border: solid 2px $accent;
     margin-top: 15px;
     letter-spacing: 1px;
     width: 100%;
+}
 
+button.comment:hover,
+button.comment:focus {
+    background-color: $white-shade;
 }
