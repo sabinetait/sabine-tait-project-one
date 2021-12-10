@@ -18,17 +18,27 @@
         
         <nav>
             <ul class="home-about">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/index.html/#about">About</a></li>
+                <li>   
+                    <a href="/index.html">Home</a>
+                </li>
+                <li>
+                    <a href="/index.html/#about">About</a>
+                </li>
             </ul>
             
-            <a href="#"><i class="fas fa-bars menu"></i></a>
+            <a href="#">
+                <span class="sr-only">Click for navigation menu</span><i class="fas fa-bars menu"></i>
+            </a>
 
             <p id="willow">Willow</p>
 
             <ul>
-                <li><a href="#blog" class="selected">Blog</a></li>
-                <li><a href="/contact.html">Contact</a></li>
+                <li>
+                    <a href="#blog" class="selected">Blog</a>
+                </li>
+                <li>
+                    <a href="/contact.html">Contact</a>
+                </li>
             </u>
         </nav>
 
@@ -53,10 +63,18 @@
                 <div class="aside-recent-posts">
                     <h3>Recent posts</h3>
                     <ul class="recent-posts">
-                        <li><a href="#">Lorem ipsum dolor sit.</a></li>
-                        <li><a href="#">Rem officia autem culpa</a></li>
-                        <li><a href="#">Ullam illo delectus dolores</a></li>
-                        <li><a href="#">Officia tenetur accusamus dicta</a></li>
+                        <li>
+                            <a href="#">Lorem ipsum dolor sit.</a>
+                        </li>
+                        <li>
+                            <a href="#">Rem officia autem culpa</a>
+                        </li>
+                        <li>
+                            <a href="#">Ullam illo delectus dolores</a>
+                        </li>
+                        <li>
+                            <a href="#">Officia tenetur accusamus dicta</a>
+                        </li>
                     </ul>
                 </div>
 
@@ -106,14 +124,17 @@
                     </div>
 
                     <form action="submit" class="comment" autocomplete="off" name="comment">
-                        <div class="userName">
-                        <input type="text" require="true" placeholder="Name">
+                        <div class="user-name">
+                            <label for="user-name" hidden>Name:</label>
+                            <input type="text" require="true" placeholder="Name">
                         </div>
 
-                        <div class="userEmail">
-                        <input type="email" require="true" placeholder="Email address">
+                        <div class="user-email">
+                            <label for="user-email" hidden>Email:</label>
+                            <input type="email" require="true" placeholder="Email address">
                         </div>
 
+                        <label for="user-comment" hidden>Comment:</label>
                         <textarea name="user-comment" id="user-comment" cols="30" rows="10" require="true" placeholder="Comment"></textarea>
                     
                         <button type="submit" form="comment-form" class="comment">Post comment</button>

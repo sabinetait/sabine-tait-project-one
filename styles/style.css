@@ -337,6 +337,10 @@ header {
   background-color: #345231;
 }
 
+.sr-only {
+  display: none;
+}
+
 nav {
   background-color: #345231;
   display: -webkit-box;
@@ -853,8 +857,8 @@ form.comment {
           justify-content: space-between;
 }
 
-div.userName,
-div.userEmail {
+div.user-name,
+div.user-email {
   width: calc((100% / 2) - 7px);
   padding-bottom: 15px;
 }

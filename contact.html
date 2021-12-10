@@ -17,16 +17,27 @@
 
         <nav>
             <ul class="home-about">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/index.html/#about">About</a></li>
+                <li>
+                    <a href="/index.html">Home</a>
+                </li>
+                <li>
+                    <a href="/index.html/#about">About</a>
+                </li>
             </ul>
 
-            <a href="#"><i class="fas fa-bars menu"></i></a>
+            <a href="#">
+                <span class="sr-only">Click for navigation menu</span><i class="fas fa-bars menu"></i>
+            </a>
 
             <p id="willow">Willow</p>
+
             <ul>
-                <li><a href="/blog.html">Blog</a></li>
-                <li><a href="#contact"class="selected">Contact</a></li>
+                <li>
+                    <a href="/blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="#contact"class="selected">Contact</a>
+                </li>
             </u>
         </nav>
 
@@ -41,10 +52,10 @@
             <div class="willow-contact">
                 <div class="aside-socials">
 
-                    <a href="#"><i class="fab fa-facebook-f aside-socials"></i></a>
-                    <a href="#"><i class="fab fa-twitter aside-socials"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in aside-socials"></i></a>
-                    <a href="#"><i class="fab fa-instagram aside-socials"></i></a>
+                    <a href="#"><span class="sr-only">Click for Facebook page</span><i class="fab fa-facebook-f aside-socials"></i></a>
+                    <a href="#"><span class="sr-only">Click for Twitter page</span><i class="fab fa-twitter aside-socials"></i></a>
+                    <a href="#"><span class="sr-only">Click for LinkedIn page</span><i class="fab fa-linkedin-in aside-socials"></i></a>
+                    <a href="#"><span class="sr-only">Click for Instagram page</span><i class="fab fa-instagram aside-socials"></i></a>
 
                 </div>
 
@@ -65,14 +76,17 @@
             <form action="submit" class="contact-form" autocomplete="off" name="contact-form" id="contact-form">
                 
                 <div class="name">
+                    <label for="name" hidden>Name:</label>
                     <input type="text" required="true" placeholder="Name">
                 </div>
 
                 <div class="email">
+                    <label for="email" hidden>Email:</label>
                     <input type="email" required="true" placeholder="Email address">
                 </div>
 
                 <div class="text">
+                    <label for="user-message" hidden>Message:</label>
                     <textarea name="user-message" id="user-message" required="true" cols="30" rows="10" placeholder="Message"></textarea>
                 </div>
 
