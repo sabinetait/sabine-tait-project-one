@@ -42,6 +42,51 @@ $white-shade: #f6f6f6;
         }   
     }
     // home page
+    // favourite things and bucket list sections
+    .favourite-things,
+    .bucket-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .favourite-content,
+    .favourite-img,
+    .bucket-list-content,
+    .bucket-list-img {
+        width: 80%;
+    }
+
+    .favourite-content,
+    .bucket-list-content {
+        text-align: center;
+    }
+
+    .bucket-list-content {
+        margin-top: 50px;
+        margin-bottom: 40px;
+        padding-right: 0px;
+    }
+
+    div.favourite-things::before,
+    div.bucket-list::before {
+        display: none;
+    }
+
+    .favourite-img,
+    .bucket-list-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    img.favourite {
+        box-shadow: 25px 25px $green-grey;
+    }
+
+    img.bucket-list {
+        box-shadow: 25px 25px $pine;
+    }
+
     // jouney section
     .journey {
         align-items: center;
