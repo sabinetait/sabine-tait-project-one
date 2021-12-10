@@ -52,6 +52,28 @@ $white-shade: #f6f6f6;
 }
 
 @media (max-width: 860px) {
+    // home page
+    // gallery section
+    div.gallery {
+        flex-wrap: nowrap;
+        flex-direction: column;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    // footer
+    div.footer {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    div.quick-link {
+        width: 100%;
+        padding: 15px;
+    }
+
     // blog page
     div.blog-flex {
         flex-direction: column;

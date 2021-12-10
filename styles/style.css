@@ -953,6 +953,32 @@ div.email {
   }
 }
 @media (max-width: 860px) {
+  div.gallery {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  div.gallery img {
+    width: 100%;
+  }
+
+  div.footer {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  div.quick-link {
+    width: 100%;
+    padding: 15px;
+  }
+
   div.blog-flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
