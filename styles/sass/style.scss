@@ -222,11 +222,14 @@ $white-shade: #f6f6f6;
     // nav
     nav {
         justify-content: left;
+    }
 
-        ul {
-        display: none;
+    .hide {
+        visibility: collapse;
+    }
 
-        }
+    .show {
+        visibility: visible;
     }
 
     i.menu {

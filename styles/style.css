@@ -353,7 +353,6 @@ i.menu {
   color: #f6f6f6;
   font-size: 0;
   padding: 20px 10px;
-  visibility: collapse;
 }
 
 .selected {
@@ -1168,8 +1167,13 @@ h1.blog {
         -ms-flex-pack: left;
             justify-content: left;
   }
-  nav ul {
-    display: none;
+
+  .hide {
+    visibility: collapse;
+  }
+
+  .show {
+    visibility: visible;
   }
 
   i.menu {
