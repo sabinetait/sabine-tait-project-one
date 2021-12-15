@@ -9,7 +9,16 @@ i.menu {
     color: $white-shade;
     font-size: 0;
     padding: 20px 10px;
-    // visibility: collapse;
+}
+
+i.menu,
+.mobile-only {
+    visibility: collapse;
+}
+
+.mobile-only {
+    flex-direction: column;
+    height: 0;
 }
 
 .selected {

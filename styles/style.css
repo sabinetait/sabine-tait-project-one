@@ -355,6 +355,19 @@ i.menu {
   padding: 20px 10px;
 }
 
+i.menu,
+.mobile-only {
+  visibility: collapse;
+}
+
+.mobile-only {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 0;
+}
+
 .selected {
   color: #e4a436;
 }

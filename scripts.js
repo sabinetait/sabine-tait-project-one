@@ -1,10 +1,10 @@
 // Add a toggle to the hamburger menu in smaller media queries
-
 // Target the menu icon and save it in a variable
 const menuElement = document.querySelector('.menu');
 
 // Target nav ul element to manipulate
-const navUlElement = document.querySelector('.hide');
+const navUlElement = document.querySelector('.mobile-only');
+console.log(navUlElement);
 
 // Create an event listener to capture clicks on the menu icon
 menuElement.addEventListener('click', function(event) {
@@ -18,3 +18,4 @@ function navToggle() {
 navUlElement.classList.toggle("show");
 }
 
+// 
