@@ -222,6 +222,12 @@ $white-shade: #f6f6f6;
     // nav
     nav {
         justify-content: left;
+        background-color: rgba(52, 82, 49, 0.8);
+        position: relative;
+
+        p {
+            display: none;
+        }
     }
 
     .hide {
@@ -230,6 +236,10 @@ $white-shade: #f6f6f6;
 
     .show {
         visibility: visible;
+        height: 45vh;
+        transition-property: height;
+        transition-duration: 500ms;
+        transition-timing-function: ease-in-out;
     }
 
     i.menu {
