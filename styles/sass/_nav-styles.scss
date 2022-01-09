@@ -9,7 +9,21 @@ i.menu {
     color: $white-shade;
     font-size: 0;
     padding: 20px 10px;
+}
+
+i.menu,
+.mobile-only {
     visibility: collapse;
+}
+
+.mobile-only {
+    flex-direction: column;
+    align-items: first baseline;
+    height: 0vh;
+    transition-property: height;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+
 }
 
 .selected {

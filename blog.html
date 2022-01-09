@@ -17,7 +17,16 @@
     <header class="blog">
         
         <nav>
-            <ul class="home-about">
+            <span class="sr-only">Click for navigation menu</span><i class="fas fa-bars menu"></i>
+
+            <ul class="mobile-only">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+            
+            <ul class="hide">
                 <li>   
                     <a href="index.html">Home</a>
                 </li>
@@ -26,13 +35,9 @@
                 </li>
             </ul>
             
-            <a href="#">
-                <span class="sr-only">Click for navigation menu</span><i class="fas fa-bars menu"></i>
-            </a>
-
             <p id="willow">Willow</p>
 
-            <ul>
+            <ul class="hide">
                 <li>
                     <a href="blog.html" class="selected">Blog</a>
                 </li>
@@ -152,6 +157,6 @@
         <p class="copyright">Copyright © 2018 HackerYou</p>
     
     </footer>
-    
+    <script src="./scripts.js"></script>
 </body>
 </html>
